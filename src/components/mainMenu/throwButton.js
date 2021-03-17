@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from './Modal'
+import { Link } from 'react-router-dom'
 
 function ThrowButton() {
     const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +12,9 @@ function ThrowButton() {
                 <input type="text" />
                 <span>Player 2</span>
                 <input type="text" />
-                <button>I feel lucky!</button>
+                <Link to='/results'>
+                    <button>I feel lucky!</button>
+                </Link>
             </Modal>
         </>
     );

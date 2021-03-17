@@ -1,16 +1,19 @@
-import './App.css';
-import ThrowButton from './components/mainMenu/throwButton.js';
-import ThrowHistory from './components/mainMenu/throwHistory.js';
-import logo from './img/tarot_logo.png'
-import './App.css';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import MainMenu from './pages/MainMenu';
+import Results from './pages/Results';
 
 function App() {
   return (
-    <div className="App">
-      <img className="MainMenu__Logo" src={logo} alt="Logo"></img>
-      <ThrowButton className="MainMenu__BeginButton"></ThrowButton>
-      <ThrowHistory></ThrowHistory>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <MainMenu />
+        </Route>
+        <Route exact path="/results">
+          <Results />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
