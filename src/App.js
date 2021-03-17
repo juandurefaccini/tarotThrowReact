@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import './App.css';
+import ThrowButton from './components/mainMenu/throwButton.js';
+import ThrowHistory from './components/mainMenu/throwHistory.js';
+import logo from './img/tarot_logo.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className="MainMenu__Logo" src={logo} alt="Logo"></img>
+      <ThrowButton className="MainMenu__BeginButton"></ThrowButton>
+      <ThrowHistory></ThrowHistory>
     </div>
   );
 }
