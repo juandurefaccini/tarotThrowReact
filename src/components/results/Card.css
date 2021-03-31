@@ -1,0 +1,14 @@
+.Card{
+    background-color: brown;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Card__img{
+    width: 100%;
+}
+
+.Card__Description{
+    text-align: center;
+}
